@@ -25,6 +25,14 @@ for i in range (0, len(string_list)):
     else:
         new_string_list.append(word)
 
-print(' '.join(new_string_list))
-
+new_string = ' '.join(new_string_list)
+print(new_string)
+print("\n", "\n", "=============================")
+counter_list = new_string.split()
+more_than_6 = []
+for i in range (0, len(counter_list)):
+    if len(counter_list[i]) > 6 :
+        more_than_6.append(counter_list[i])
+print("Big Words List Is :")
+print(more_than_6)
 
